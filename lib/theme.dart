@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 Color primaryColor = const Color(0xff6C5ECF);
 Color secondaryColor = const Color(0xff38ABBE);
@@ -13,38 +13,38 @@ Color secondaryTextColor = const Color(0xff999999);
 
 //SIGN IN/UP
 
-TextStyle mainText = GoogleFonts.poppins(
-  fontSize: 24,
-  fontWeight: FontWeight.w600,
-  color: primaryTextColor,
-);
+// TextStyle mainText = GoogleFonts.poppins(
+//   fontSize: 24,
+//   fontWeight: FontWeight.w600,
+//   color: primaryTextColor,
+// );
 
-TextStyle secondText = GoogleFonts.poppins(
-  fontSize: 14,
-  fontWeight: FontWeight.w400,
-  color: const Color(0xff504F5E),
-);
+// TextStyle secondText = GoogleFonts.poppins(
+//   fontSize: 14,
+//   fontWeight: FontWeight.w400,
+//   color: Color(0xff504F5E),
+// );
 
-TextStyle suggestStyle = GoogleFonts.poppins(
-  fontSize: 16,
-  fontWeight: FontWeight.w500,
-  color: primaryTextColor,
-);
+// TextStyle suggestStyle = GoogleFonts.poppins(
+//   fontSize: 16,
+//   fontWeight: FontWeight.w500,
+//   color: primaryTextColor,
+// );
 
-TextStyle hintStyle = GoogleFonts.poppins(
-  fontSize: 14,
-  fontWeight: FontWeight.w400,
-  color: const Color(0xff504F5E),
-);
+// TextStyle hintStyle = GoogleFonts.poppins(
+//   fontSize: 14,
+//   fontWeight: FontWeight.w400,
+//   color: const Color(0xff504F5E),
+// );
 
-TextStyle buttonStyle = GoogleFonts.poppins(
-  fontSize: 16,
-  fontWeight: FontWeight.w500,
-  color: primaryTextColor,
-);
+// TextStyle buttonStyle = GoogleFonts.poppins(
+//   fontSize: 16,
+//   fontWeight: FontWeight.w500,
+//   color: primaryTextColor,
+// );
 
-TextStyle alertStyle = GoogleFonts.poppins(
-  fontSize: 10,
-  fontWeight: FontWeight.w300,
-  color: alertColor,
-);
+// TextStyle alertStyle = GoogleFonts.poppins(
+//   fontSize: 10,
+//   fontWeight: FontWeight.w300,
+//   color: alertColor,
+// );
