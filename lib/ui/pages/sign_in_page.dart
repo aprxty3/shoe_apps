@@ -7,41 +7,9 @@ class SignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget register() {
-      return Container(
-        margin: const EdgeInsets.only(top: 350),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Don\'t have an Account?',
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: regular,
-                color: secondaryTextColor,
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/sign_up');
-              },
-              child: Text(
-                'Sign Up',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: regular,
-                  color: primaryColor,
-                ),
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
     Widget header() {
       return Container(
-        margin: const EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.only(top: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -109,7 +77,7 @@ class SignInPage extends StatelessWidget {
                   ),
                   hintText: 'Enter your email',
                   hintStyle: TextStyle(
-                    color: primaryTextColor,
+                    color: secondaryTextColor,
                   ),
                   prefixIcon: Icon(
                     Icons.mail,
@@ -148,6 +116,7 @@ class SignInPage extends StatelessWidget {
                 color: kBg2,
               ),
               child: TextFormField(
+                obscureText: true,
                 style: TextStyle(
                   color: primaryTextColor,
                   fontWeight: regular,
@@ -163,7 +132,7 @@ class SignInPage extends StatelessWidget {
                   ),
                   hintText: 'Enter password',
                   hintStyle: TextStyle(
-                    color: primaryTextColor,
+                    color: secondaryTextColor,
                   ),
                   prefixIcon: Icon(
                     Icons.lock,
@@ -193,13 +162,49 @@ class SignInPage extends StatelessWidget {
             'Sign In',
             style: buttonStyle,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamedAndRemoveUntil(
+                context, '/home', (route) => false);
+          },
+        ),
+      );
+    }
+
+    Widget register() {
+      return Container(
+        margin: const EdgeInsets.only(top: 350),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Don\'t have an Account?',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: regular,
+                color: secondaryTextColor,
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/sign_up');
+              },
+              child: Text(
+                'Sign Up',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: regular,
+                  color: primaryColor,
+                ),
+              ),
+            ),
+          ],
         ),
       );
     }
 
     return Scaffold(
       backgroundColor: kBg1,
+      resizeToAvoidBottomInset: true,
       body: ListView(
         padding: const EdgeInsets.all(30),
         children: [
