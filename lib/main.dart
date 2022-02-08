@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_apps/ui/pages/homepage.dart';
+import 'package:shoe_apps/ui/pages/main_page.dart';
 import 'package:shoe_apps/ui/pages/sign_in_page.dart';
 import 'package:shoe_apps/ui/pages/sign_up_page.dart';
 import 'package:shoe_apps/ui/pages/splash_page.dart';
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashPage(),
         '/sign_in': (context) => SignInPage(),
         '/sign_up': (context) => SignUpPage(),
-        '/home': (context) => HomePage(),
+        '/home': (context) => MainPage(),
       },
     );
   }
