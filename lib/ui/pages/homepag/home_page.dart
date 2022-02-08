@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoe_apps/ui/widget/categories_widget.dart';
 
 import '../../../theme.dart';
 
@@ -56,8 +57,32 @@ class HomePage extends StatelessWidget {
       );
     }
 
-    Widget list() {
-      return Container();
+    Widget categories() {
+      return Container(
+        margin: const EdgeInsets.only(top: 30),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: const [
+              CategoriesWidget(
+                category: 'All Shoes',
+              ),
+              CategoriesWidget(
+                category: 'Running',
+              ),
+              CategoriesWidget(
+                category: 'Training',
+              ),
+              CategoriesWidget(
+                category: 'Basketball',
+              ),
+              CategoriesWidget(
+                category: 'Hiking',
+              ),
+            ],
+          ),
+        ),
+      );
     }
 
     return Scaffold(
@@ -67,6 +92,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             header(),
+            categories(),
           ],
         ),
       ),
