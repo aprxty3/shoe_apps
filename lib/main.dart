@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => SplashPage(),
-        '/sign_in': (context) => SignInPage(),
-        '/sign_up': (context) => SignUpPage(),
-        '/home': (context) => MainPage(),
+        '/': (context) => const SplashPage(),
+        '/sign_in': (context) => const SignInPage(),
+        '/sign_up': (context) => const SignUpPage(),
+        '/home': (context) => const MainPage(),
       },
     );
   }
